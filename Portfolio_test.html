@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ragunandhan Dhansekar - Full Stack Developer</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: #e0e0e0;
+            transition: all 0.3s ease-in-out;
+        }
+
+        header {
+            background-color: #1f1f1f;
+            color: #00adb5;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+            transition: all 0.3s ease-in-out;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            animation: fadeInDown 1s ease-in-out;
+        }
+
+        nav {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #00adb5;
+            font-size: 1.2em;
+            transition: color 0.3s ease-in-out;
+        }
+
+        nav a:hover {
+            color: #ff5722;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        .section {
+            margin: 20px 0;
+            padding: 20px;
+            background: #1e1e1e;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            transition: all 0.3s ease-in-out;
+        }
+
+        .section h2 {
+            font-size: 2em;
+            margin-bottom: 10px;
+            color: #00adb5;
+        }
+
+        .section p {
+            font-size: 1.2em;
+        }
+
+        button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 1em;
+            margin-top: 10px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            background-color: #00adb5;
+            color: #121212;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        button:hover {
+            background-color: #ff5722;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #1f1f1f;
+            color: #e0e0e0;
+            margin-top: 20px;
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Ragunandhan Dhansekar</h1>
+        <nav>
+            <a href="#about">About Me</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <div class="container">
+        <section id="about" class="section">
+            <h2>About Me</h2>
+            <p>A highly motivated individual with experience in HTML, CSS, JavaScript, and MongoDB. Completed a full stack web development internship and looking for opportunities to apply my skills and gain hands-on experience in the field of web development. I also enjoy socializing with like-minded people.</p>
+        </section>
+        <section id="portfolio" class="section">
+            <h2>Portfolio</h2>
+            <p>Currently seeking opportunities to build my portfolio with real-world projects. Check back soon for updates!</p>
+            <button onclick="showAlert('Portfolio Button Clicked')">Click Me</button>
+        </section>
+        <section id="contact" class="section">
+            <h2>Contact</h2>
+            <p><strong>Phone:</strong> 9952494608</p>
+            <p><strong>Email:</strong> <a href="mailto:ragunandhan48@gmail.com">ragunandhan48@gmail.com</a></p>
+            <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/ragu-nandhan-d-136b8b261">linkedin.com/in/ragu-nandhan-d-136b8b261</a></p>
+            <button onclick="showAlert('Contact Button Clicked')">Connect with Me</button>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 Ragunandhan Dhansekar</p>
+    </footer>
+
+    <script>
+        function showAlert(message) {
+            alert(message);
+        }
+    </script>
+</body>
+</html>
